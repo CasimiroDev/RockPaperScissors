@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>JO KEN PO</h1>
+    <div id="container">
+        <h3>FAÇA SUA ESCOLHA</h3>
+        <div class="choices">
+            <div class="choice_item">
+                <label for="paper">
+                    <img src="./assets/paper.png" alt="">
+                </label>
+                <input type="radio" name="player_option" value=0 id="paper">
+            </div>
+            <div class="choice_item">
+                <label for="rock">
+                    <img src="./assets/rock.png" alt="">
+                </label>
+                <input type="radio" name="player_option" value=1 id="rock">
+            </div>
+            <div class="choice_item">
+                <label for="scissors">
+                    <img src="./assets/scissors.png" alt="">
+                </label>
+                <input type="radio" name="player_option" value=2 id="scissors"> 
+            </div>
+        </div>
+        <input type="button" id="play_button" value="Jogar" onclick="gerarEscolha()">
+    </div>
+    <p id="Result"></p>
+    <script src="./index.js"></script>
+</body>
+</html>
